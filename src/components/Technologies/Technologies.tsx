@@ -42,7 +42,7 @@ const Technologies: React.FC = () => {
         <SkillRow>
           {Object.keys(skills).map((key) => {
             return (
-              <SkillContainer>
+              <SkillContainer key={key}>
                 <SkillTitle>{key}</SkillTitle>
                 <SkillList key={key}>
                   {skills[key].map((skill:string) => {
