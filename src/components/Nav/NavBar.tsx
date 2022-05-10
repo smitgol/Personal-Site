@@ -43,36 +43,40 @@ const NavBar: React.FC = () => {
     };
   }, [handleNavigation]);
 
+  const scrollToY = (value: number) => {
+    window.scrollTo({top:value, left:0, behavior:"smooth"})
+  }
+
   return (
     <Container className={navigationClass}>
       <PortfolioDiv>
-        <Link href="/">
+        <div onClick={() => {scrollToY(1)}}>
           <PortfolioSymbolAndText>
             <DiCssdeck size="3rem" color="#64ffda" /> <span>Portfolio</span>
           </PortfolioSymbolAndText>
-        </Link>
+        </div>
       </PortfolioDiv>
       <PortfolioLinks>
         <PortfolioText>
-          <Link href="#about">
+          <div onClick={() => {scrollToY(5)}}>
             <PortfolioLink>
               <span>About Me</span>
             </PortfolioLink>
-          </Link>
+          </div>
         </PortfolioText>
         <PortfolioText>
-          <Link href="#projects">
+          <div onClick={() => {scrollToY(550)}}>
             <PortfolioLink>
               <span>Projects</span>
             </PortfolioLink>
-          </Link>
+          </div>
         </PortfolioText>
         <PortfolioText>
-          <Link href="#technologies">
+          <div onClick={() => {scrollToY(3550)}}>
             <PortfolioLink>
               <span>Technologies</span>
             </PortfolioLink>
-          </Link>
+          </div>
         </PortfolioText>
       </PortfolioLinks>
       <PortfolioSocial>
