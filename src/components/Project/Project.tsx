@@ -21,15 +21,15 @@ import { projectData } from "../../data/projectdata";
 interface ProjectInterFace {
   title: string;
   description: string;
-  stack: [];
+  stack: string[];
   img: any;
-  github_link: string;
-  website_link: string;
+  github_link?: string;
+  website_link?: string;
 }
 
 const Project: React.FC = () => {
   const renderProjectComponent = () => {
-    return projectData.map((project: ProjectInterFace, index) => {
+    return projectData.map((project: ProjectInterFace, index: number) => {
       let condition = index % 2 == 0;
       let content_class = condition ? "project-content-odd" : "";
       let image_class = condition ? "project-image-parent-odd" : "";
