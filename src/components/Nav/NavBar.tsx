@@ -38,16 +38,12 @@ const NavBar: React.FC = () => {
     [navigationClass]
   );
 
-  const handleResize = useCallback(
-    () => {
-      if (activeNav == true && window.innerWidth > 768) {
-        setActiveNav(false)
-      }
-      console.log(window.innerWidth)
-    },
-    []
-  )
-
+  const handleResize = useCallback(() => {
+    if (window.innerWidth > 768) {
+      setActiveNav(false);
+    }
+    console.log(window.innerWidth);
+  }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", handleNavigation);
@@ -63,12 +59,11 @@ const NavBar: React.FC = () => {
   };
   const responsive_nav_class_links = activeNav === true ? "nav__sm" : "";
 
-  const responsive_nav_class_btns =
-    activeNav === true ? "nav__btn__sm" : "";
+  const responsive_nav_class_btns = activeNav === true ? "nav__btn__sm" : "";
 
   const handleNavigationResponsive = () => {
     setActiveNav(!activeNav);
-  }
+  };
 
   return (
     <Container className={navigationClass}>
@@ -84,7 +79,7 @@ const NavBar: React.FC = () => {
         </div>
         <NavigationButton
           onClick={() => {
-            handleNavigationResponsive()
+            handleNavigationResponsive();
           }}
         >
           <AiOutlineAlignLeft size="3rem" />

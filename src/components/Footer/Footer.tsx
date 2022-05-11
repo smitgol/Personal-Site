@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
   return (
     <>
       <Connect>
-        <ConnectText>connect with me:-</ConnectText>
+        <ConnectText>connect:-</ConnectText>
         <ConnectLink href={links['github']} target="__blank">
           <AiFillGithub size="2.5rem"></AiFillGithub>
         </ConnectLink>

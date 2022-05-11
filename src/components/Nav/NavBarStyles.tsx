@@ -42,6 +42,8 @@ export const PortfolioLinks = styled.div`
   width: 480px;
   @media ${(props: any) => props.theme.breakpoints.md} {
     display: none;
+    justify-content: center;
+    width: auto;
   }
 `;
 export const PortfolioSocial = styled.div`
