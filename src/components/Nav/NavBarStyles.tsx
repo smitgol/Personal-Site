@@ -17,6 +17,13 @@ export const Container = styled.div`
   right: 0;
   width: 100%;
   transform: translateY(0px);
+  @media ${(props: any) => props.theme.breakpoints.md} {
+    position: fixed;
+    top: 0;
+    background-color: ${(props: any) => props.theme.colors.navy};
+    flex-direction: column;
+    gap: 20px;
+  }
 `;
 
 export const PortfolioDiv = styled.div`
@@ -24,7 +31,7 @@ export const PortfolioDiv = styled.div`
   flex-direction: row;
   align-content: center;
   justify-content: center;
-  gap: 6px;
+  gap: 48px;
 `;
 export const PortfolioLinks = styled.div`
   display: flex;
@@ -33,12 +40,18 @@ export const PortfolioLinks = styled.div`
   justify-content: space-between;
   gap: 48px;
   width: 480px;
+  @media ${(props: any) => props.theme.breakpoints.md} {
+    display: none;
+  }
 `;
 export const PortfolioSocial = styled.div`
   display: flex;
   flex-direction: row;
   align-content: center;
   gap: 8px;
+  @media ${(props: any) => props.theme.breakpoints.md} {
+    display: none;
+  }
 `;
 
 export const PortfolioText = styled.div`
@@ -53,14 +66,15 @@ export const PortfolioSymbolAndText = styled.a`
   gap: 4px;
   &:hover {
     cursor: pointer;
-    color: ${(props:any) => props.theme.colors.accent1};
+    color: ${(props: any) => props.theme.colors.accent1};
   }
+  font-size: 20px;
 `;
 export const PortfolioLink = styled.a`
   transition: 0.3s ease;
   &:hover {
     cursor: pointer;
-    color: ${(props:any) => props.theme.colors.accent1};
+    color: ${(props: any) => props.theme.colors.accent1};
   }
 `;
 
@@ -73,6 +87,18 @@ export const SocialIcons = styled.a`
     background-color: #212d45;
     transform: scale(1.2);
     cursor: pointer;
-    color: ${(props:any) => props.theme.colors.accent1};
+    color: ${(props: any) => props.theme.colors.accent1};
+  }
+`;
+
+export const NavigationButton = styled.div`
+  display: none;
+  @media ${(props: any) => props.theme.breakpoints.md} {
+    display: block;
+  }
+  transition: 0.3s ease;
+  &:hover {
+    cursor: pointer;
+    color: ${(props: any) => props.theme.colors.accent1};
   }
 `;

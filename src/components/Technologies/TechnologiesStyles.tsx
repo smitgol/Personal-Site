@@ -8,6 +8,9 @@ export const Container = styled.div`
   gap: 48px;
   align-items: center;
   justify-content: space-around;
+  @media ${(props: any) => props.theme.breakpoints.md} {
+    width: 90%;
+  }
 `;
 
 export const TabElements = styled.div`
@@ -26,6 +29,9 @@ export const TabElement = styled.div`
   &: hover {
     border-bottom: 2px solid ${(props: any) => props.theme.colors.accent1};
     cursor: pointer;
+  }
+  @media ${(props: any) => props.theme.breakpoints.md} {
+    font-size: 24px;
   }
 `;
 
@@ -49,6 +55,9 @@ export const SkillTitle = styled.span`
   font-weight: 600;
   line-spacing: 1;
   color: ${(props: any) => props.theme.colors.LightSlate};
+  @media ${(props: any) => props.theme.breakpoints.md} {
+    font-size: 20px;
+  }
 `;
 
 export const SkillList = styled.ul`
@@ -64,4 +73,7 @@ export const SkillElement = styled.li`
   padding: 10px 0px;
   color: ${(props: any) => props.theme.colors.slate};
   font-size: 18px;
+  @media ${(props: any) => props.theme.breakpoints.md} {
+    font-size: 17px;
+  }
 `;

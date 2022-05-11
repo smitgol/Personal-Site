@@ -31,4 +31,9 @@ export const PersonalSiteLink = styled.div`
   align-items: center;
   gap: 36px;
   padding:30px;
+  @media ${(props: any) => props.theme.breakpoints.md} {
+    padding: 20px 0px;
+    justify-content: center;
+    gap: 24px;
+  }
 `;

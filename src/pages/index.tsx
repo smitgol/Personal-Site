@@ -17,7 +17,7 @@ const Home: NextPage = () => {
       </SectionTitleRow>
       <Project />
       <SectionTitleRow>
-        <SectionTitle>Technologies That I Know</SectionTitle>
+        <SectionTitle>Technologies</SectionTitle>
       </SectionTitleRow>
       <Technologies />
       <Footer />
