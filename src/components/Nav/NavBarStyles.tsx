@@ -22,7 +22,8 @@ export const Container = styled.div`
     top: 0;
     background-color: ${(props: any) => props.theme.colors.navy};
     flex-direction: column;
-    gap: 20px;
+    gap: 18px;
+    padding: 15px 0px;
   }
 `;
 
@@ -44,6 +45,7 @@ export const PortfolioLinks = styled.div`
     display: none;
     justify-content: center;
     width: auto;
+    gap: 24px;
   }
 `;
 export const PortfolioSocial = styled.div`
@@ -71,6 +73,9 @@ export const PortfolioSymbolAndText = styled.a`
     color: ${(props: any) => props.theme.colors.accent1};
   }
   font-size: 20px;
+  @media ${(props: any) => props.theme.breakpoints.md} {
+    font-size: 24px;
+  }
 `;
 export const PortfolioLink = styled.a`
   transition: 0.3s ease;

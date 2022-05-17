@@ -57,12 +57,12 @@ const Project: React.FC = () => {
                 </ProjectLinkElement>
               )}
               {project.website_link &&
-              <ProjectLinkElement href={project.github_link} target="__blank">
+              <ProjectLinkElement href={project.website_link} target="__blank">
                 <AiOutlineSelect size="2.5rem"></AiOutlineSelect>
               </ProjectLinkElement>}
             </ProjectLinks>
           </ProjectContent>
-          <ProjectImageDiv className={`project-image-parent ${image_class}`}>
+          <ProjectImageDiv className={`project-image-parent ${image_class}`} href={project.website_link || project.github_link}>
             <Image
               src={project.img}
               height={360}

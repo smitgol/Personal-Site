@@ -26,7 +26,7 @@ export const ProjectElement = styled.div`
   }
 `;
 
-export const ProjectImageDiv = styled.div`
+export const ProjectImageDiv = styled.a`
   display: block;
   max-width: 700px;
   height: auto;
