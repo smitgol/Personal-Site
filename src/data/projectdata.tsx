@@ -2,8 +2,18 @@ import test_img from "../images/crypto_hunter.jpg";
 import spotify_page from "../images/spotify_page.png"
 import stock_page from "../images/stock_page.png"
 import twitch_page from "../images/twitch_page.png"
+import lottery_page from "../images/lottery_page.png"
 
 export const projectData = [
+  {
+    title: "Decentralized Lottery System",
+    description: "This is decentralized lottery system where, user money will be not owned by one person or organization.But that balance will be store in smart contract.",
+    stack: ["JavaScript","React.Js", "Next.JS", "Material UI", "Ether.JS"],
+    github_link: "https://github.com/smitgol/Web3-lottery-app",
+    website_link: "https://roaring-moxie-4a35e1.netlify.app/",
+    img: lottery_page,
+
+  },
   {
     title: "Crypto Hunter",
     description:
