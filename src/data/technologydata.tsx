@@ -5,6 +5,6 @@ export const technologydata = {
     Other: ["Git, Github", "SQL", "Linux"],
   },
   web3: {
-    blockchain: ["blockchain basics", "Solidity", "Smart Contract", "Ether.js", "Hardhat", "Alchemy", "Remix IDE"],
+    blockchain: ["Solidity", "Smart Contract", "Ether.js"]
   },
 };
