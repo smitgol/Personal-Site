@@ -27,7 +27,7 @@ export const ProjectElement = styled.div`
 `;
 
 export const ProjectImageDiv = styled.a`
-  display: block;
+  display: grid;
   max-width: 700px;
   height: auto;
   grid-area: 1 / 7 / -1 / -1;
