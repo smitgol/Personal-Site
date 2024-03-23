@@ -9,8 +9,8 @@ export const projectData = [
     title: "Decentralized Lottery System",
     description: "This is decentralized lottery system where, user money will be not owned by one person or organization.But that balance will be store in smart contract.",
     stack: ["JavaScript","React.Js", "Next.JS", "Material UI", "Ether.JS"],
-    github_link: "https://github.com/smitgol/Web3-lottery-app",
-    website_link: "https://roaring-moxie-4a35e1.netlify.app/",
+    github_link: "https://github.com/smitgol/dlottery",
+    website_link: "https://jazzy-nasturtium-fe5d67.netlify.app/",
     img: lottery_page,
 
   },
