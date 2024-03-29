@@ -2,7 +2,7 @@ import test_img from "../images/crypto_hunter.jpg";
 import spotify_page from "../images/spotify_page.png"
 import stock_page from "../images/stock_page.png"
 import twitch_page from "../images/twitch_page.png"
-import lottery_page from "../images/lottery_page.png"
+import lottery_page from "../images/d_app_screen.png"
 
 export const projectData = [
   {
