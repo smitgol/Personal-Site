@@ -8,6 +8,7 @@ import dynamic from 'next/dynamic'
 
 
 
+
 const Project = dynamic(()=> import("../components/Project/Project"))
 
 const Technologies = dynamic(()=> import("../components/Technologies/Technologies"))

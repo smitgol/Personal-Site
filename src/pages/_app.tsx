@@ -2,8 +2,16 @@ import Theme from "../styles/theme";
 import "../css/index.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import ReactGA from "react-ga";
+import { useEffect } from "react";
+
+const gaKey = process.env["NEXT_PUBLIC_GA_KEY"] ?? "";
+ReactGA.initialize(gaKey);
 
 function MyApp({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   return (
     <Theme>
       <Head>
